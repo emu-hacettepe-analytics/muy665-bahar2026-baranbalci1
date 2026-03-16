@@ -3,7 +3,7 @@ title: "Hakkımda"
 sidebar: false 
 ---
 
-![](images/WhatsApp Image 2026-03-04 at 12.18.44.jpeg){fig-align="center" width="300"}
+![](images/WhatsApp%20Image%202026-03-04%20at%2012.18.44.jpeg){fig-align="center" width="300"}
 
 # Eğitim
 
@@ -16,19 +16,19 @@ sidebar: false
 
 1.  Türksat Uydu Haberleşme ve Kablo TV İşletme A.Ş., Project&Site Engineer, 2022- Present.
 
-## Internships
+## Stajlar
 
 1.  Doğanlar Çelik Dövme San. Tic. A.Ş., Intern, 2019.
 
 2.  TEKSAN Hidrolik Rakor Ltd. Şti., Intern, 2017.
 
-# Projects
+# Projeler
 
 **Lisans Bitirme Projesi:** Otomobillerde kullanılan çarpışma kutularının farklı geometrik konfigürasyonlar altında enerji sönümleme performanslarının karşılaştırılması.
 
 LS-DYNA ortamında oluşturulan sonlu eleman modelleri üzerinde dinamik yükleme senaryoları tanımlanmış; deformasyon modları, enerji emilimi ve yapısal davranışlar analiz edilmiştir. Elde edilen sonuçlar doğrultusunda, basit ve düzenli geometrilerin (silindirik ve prizmatik yapılar) karmaşık geometrilere kıyasla daha yüksek ve kararlı enerji sönümleme performansı sağladığı gösterilmiştir.
 
-# Certificates
+# Sertifikalar
 
 • Solidworks/Solidcam, Özel Vektörel Bilişim Bilgisayar Kursu, 23/12/2017
 
@@ -48,7 +48,7 @@ LS-DYNA ortamında oluşturulan sonlu eleman modelleri üzerinde dinamik yüklem
 
 • Implementing and Administering Cisco Solutions (CCNA) v2.1, Knowledge Club, 23/11/2024
 
-# Competencies
+# Yetkinlikler
 
 • Microsoft Office
 
@@ -64,10 +64,12 @@ LS-DYNA ortamında oluşturulan sonlu eleman modelleri üzerinde dinamik yüklem
 
 • CATIA
 
-# Hobbies
+# Hobiler
 
 • Basketbol
 
 • Kamp
 
 • Trekking
+
+<a href="cv.pdf" class="btn btn-primary" target="_blank"> <i class="bi bi-file-earmark-pdf"></i> CV'yi İndir </a>

@@ -4,3 +4,7 @@
   top: 0;
   z-index: 9999;
 }
+
+body {
+  background-color: #cfd6dd;
+}
