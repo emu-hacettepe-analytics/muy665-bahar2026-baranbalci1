@@ -2,15 +2,79 @@
 title: "Çalışma 1"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
+Bu çalışmadaki görevlerimiz;
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+a.Aşağıdaki kaynaklardan bir video seçmek ve Quarto dokümanımızda kısa bir özetini sunmak:
 
-## (a)
+• Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Kerem Demirtaş & Erdi Dasdemir
 
-```{r}
-1 + 1
-```
+• Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Cem Vardar & Erdi Dasdemir
 
-## (b)
+• Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Mustafa Baydoğan & ErdiDaşdemir
+
+• Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir
+
+b\. Seçtiğimiz videodan, cevaplarıyla birlikte bir açık uçlu soru ve bir çoktan seçmeli soru hazırlamak.
+
+Ben Baykal Hafızoğlu'nun konuk olarak katıldığı videoyu seçtim.
+
+Videoya dair özeti, açık uçlu ve çoktan seçmeli sorularımı aşağıda bulabilirsiniz.
+
+## a)Özet
+
+Seçmiş olduğum Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Baykal Hafızoğlu & Erdi Daşdemir başlıklı videoda Baykal Hafızoğlu, akademik ve profesyonel kariyer deneyimlerini paylaşarak operasyon araştırması (Operations Research – OR) ve analitik yöntemlerin iş dünyasındaki kullanımı hakkında bilgi paylaşıyor. ODTÜ’de lisans ve yüksek lisans eğitimini tamamladıktan sonra Arizona State University’de doktora yapan Baykal Bey, kısa bir akademik kariyerin ardından ABD’de iş hayatına başlayarak özellikle supply chain alanında analitik model ve çözümler geliştirmiş.
+
+Analitik yaklaşımlar descriptive, diagnostic, predictive ve prescriptive olmak üzere dört ana başlığa ayrılarak anlatılmış ve bu başlıklar value-complexity ekseninde karşılaştırılarak detayları verilmiş. Ayrıca analitik çözüm yöntemlerinin gelişim süreci, kullanım sıklıkları ve çözümün müşteriye nasıl sunulduğu gibi konulara da değinilmiş.
+
+Baykal Bey başarılı projelerin temelinde doğru problem tanımının yer aldığını vurguluyor. En iyi çözüm modelinin en pahalı veya en karmaşık olan değil; en uygulanabilir, basit ve anlaşılır çözüm modeli olduğundan bahsediyor. Bu noktada; müşteri ihtiyaçlarını doğru anlamanın ve müşteri memnuniyetini merkeze almanın da ne kadar önemli olduğunun altını çiziyor. Özellikle tedarik zinciri alanında bir problemin nasıl tanımlanacağı, çözümün nasıl geliştirileceği ve sürecin nasıl yönetileceği hakkında önemli tecrübeler aktarıyor.
+
+Genel olarak videoda analitik çalışmaların amacı, karmaşık görünen problemleri mümkün olduğunca basit, uygulanabilir ve pratik çözümlerle ele almak olarak özetleniyor.
+
+## (b)Çoktan Seçmeli ve Açık Uçlu Soru Önerisi
+
+1.  **Çoktan Seçmeli Soru:**
+
+    Analitik yaklaşımlar veri analizi olgunluk seviyesine göre farklı kategorilere ayrılmaktadır. Aşağıdaki seçeneklerden hangisi bu analitik yaklaşımların **artan analitik olgunluk ve karmaşıklık seviyesine göre doğru sıralamasını** göstermektedir?
+
+    I. Descriptive Analytics
+
+    II\. Diagnostic Analytics
+
+    III\. Predictive Analytics
+
+    IV\. Prescriptive Analytics
+
+    A. I → II → III → IV
+
+    B. I → III → II → IV
+
+    C. II → I → III → IV
+
+    D. I → II → IV → III
+
+    <details>
+
+    <summary><b>Cevabı Gör</b></summary>
+
+    **Doğru cevap:**\
+    A Şıkkı: I → II → III → IV
+
+    Açıklama: Analitik yaklaşımlar karmaşıklık ve değer üretme seviyesine göre descriptive → diagnostic → predictive → prescriptive şeklinde ilerler. Bu sıralama analitik olgunluk seviyesinin artışını gösterir.
+
+    ![](images/clipboard-602276555.png){width="512"}
+
+    </details>
+
+2.  **Açık Uçlu Soru**\
+
+    Analitik projelerde başarının yalnızca gelişmiş algoritmalar veya karmaşık modeller kullanmakla ilgili olmadığı bilinmektedir. Buna göre başarılı bir analitik projenin temel özellikleri nelerdir? Kısaca açıklayınız.
+
+    <details>
+
+    <summary><b>Cevabı Gör</b></summary>
+
+    **Doğru cevap:**
+
+    Başarılı bir analitik projenin temelinde doğru problem tanımı ve uygulanabilirlik yer almaktadır. Projenin amacı en karmaşık veya en pahalı modeli geliştirmek değil, gerçek problemi çözen ve uygulanabilir bir çözüm üretmektir. Bu nedenle analitik projelerde müşteri ihtiyaçlarını doğru anlamak, problemi net bir şekilde tanımlamak ve pratik çözümler geliştirmek büyük önem taşır. Ayrıca proje sürecinde paydaşlarla etkin iletişim kurulması ve müşteri memnuniyetinin sağlanması da başarının önemli unsurlarındandır.
+
+    </details>
