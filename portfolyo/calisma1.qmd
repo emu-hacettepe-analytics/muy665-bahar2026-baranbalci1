@@ -78,3 +78,18 @@ Genel olarak videoda analitik çalışmaların amacı, karmaşık görünen prob
     Başarılı bir analitik projenin temelinde doğru problem tanımı ve uygulanabilirlik yer almaktadır. Projenin amacı en karmaşık veya en pahalı modeli geliştirmek değil, gerçek problemi çözen ve uygulanabilir bir çözüm üretmektir. Bu nedenle analitik projelerde müşteri ihtiyaçlarını doğru anlamak, problemi net bir şekilde tanımlamak ve pratik çözümler geliştirmek büyük önem taşır. Ayrıca proje sürecinde paydaşlarla etkin iletişim kurulması ve müşteri memnuniyetinin sağlanması da başarının önemli unsurlarındandır.
 
     </details>
+
+    ```{r}
+    library(dslabs)
+
+    data("polls_us_election_2016")
+
+    data <- polls_us_election_2016
+
+    head(data)
+    ```
+
+```{r}
+my_first <- "Baran"
+my_birth_year <- 1997
+```

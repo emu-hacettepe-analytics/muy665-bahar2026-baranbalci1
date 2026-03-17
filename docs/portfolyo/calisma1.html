@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -429,8 +464,51 @@ A Şıkkı: I → II → III → IV</p>
 </summary>
 <p><strong>Doğru cevap:</strong></p>
 <p>Başarılı bir analitik projenin temelinde doğru problem tanımı ve uygulanabilirlik yer almaktadır. Projenin amacı en karmaşık veya en pahalı modeli geliştirmek değil, gerçek problemi çözen ve uygulanabilir bir çözüm üretmektir. Bu nedenle analitik projelerde müşteri ihtiyaçlarını doğru anlamak, problemi net bir şekilde tanımlamak ve pratik çözümler geliştirmek büyük önem taşır. Ayrıca proje sürecinde paydaşlarla etkin iletişim kurulması ve müşteri memnuniyetinin sağlanması da başarının önemli unsurlarındandır.</p>
-</details></li>
+</details>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"polls_us_election_2016"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> polls_us_election_2016</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  state  startdate    enddate
+1  U.S. 2016-11-03 2016-11-06
+2  U.S. 2016-11-01 2016-11-07
+3  U.S. 2016-11-02 2016-11-06
+4  U.S. 2016-11-04 2016-11-07
+5  U.S. 2016-11-03 2016-11-06
+6  U.S. 2016-11-03 2016-11-06
+                                                    pollster grade samplesize
+1                                   ABC News/Washington Post    A+       2220
+2                                    Google Consumer Surveys     B      26574
+3                                                      Ipsos    A-       2195
+4                                                     YouGov     B       3677
+5                                           Gravis Marketing    B-      16639
+6 Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+  population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1         lv           47.00         43.00            4.00               NA
+2         lv           38.03         35.69            5.46               NA
+3         lv           42.00         39.00            6.00               NA
+4         lv           45.00         41.00            5.00               NA
+5         rv           47.00         43.00            3.00               NA
+6         lv           48.00         44.00            3.00               NA
+  adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1        45.20163      41.72430        4.626221               NA
+2        43.34557      41.21439        5.175792               NA
+3        42.02638      38.81620        6.844734               NA
+4        45.65676      40.92004        6.069454               NA
+5        46.84089      42.33184        3.726098               NA
+6        49.02208      43.95631        3.057876               NA</code></pre>
+</div>
+</div></li>
 </ol>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>my_first <span class="ot">&lt;-</span> <span class="st">"Baran"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>my_birth_year <span class="ot">&lt;-</span> <span class="dv">1997</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 
 
 </section>
