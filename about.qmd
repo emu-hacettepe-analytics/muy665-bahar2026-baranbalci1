@@ -1,9 +1,13 @@
 ---
-title: "Hakkımda"
+title: "Baran Balcı-Özgeçmiş"
 sidebar: false 
 ---
 
-![](images/WhatsApp%20Image%202026-03-04%20at%2012.18.44.jpeg){fig-align="center" width="300"}
+![](images/WhatsApp%20Image%202026-03-04%20at%2012.18.44.jpeg){fig-align="center" width="200"}
+
+# Özet
+
+Türksat Mobil Evrensel Hizmet Projesi kapsamında proje planlama, saha uygulamaları ve yüklenici yönetimi süreçlerinde görev yapan bir mühendis olarak çalışmaktayım. Proje süreçlerinde kalite, zaman ve maliyet odaklı bir yaklaşım benimseyerek paydaş koordinasyonu ve veri odaklı raporlama alanlarında deneyim kazandım. Aynı zamanda Hacettepe Üniversitesi Mühendislik Yönetimi yüksek lisans programında öğrenim görmekteyim.
 
 # Eğitim
 
@@ -12,11 +16,9 @@ sidebar: false
 
 # İş Tecrübesi
 
-## Employements
-
 1.  Türksat Uydu Haberleşme ve Kablo TV İşletme A.Ş., Project&Site Engineer, 2022- Present.
 
-## Stajlar
+# Stajlar
 
 1.  Doğanlar Çelik Dövme San. Tic. A.Ş., Intern, 2019.
 
@@ -72,4 +74,4 @@ LS-DYNA ortamında oluşturulan sonlu eleman modelleri üzerinde dinamik yüklem
 
 • Trekking
 
-<a href="cv.pdf" class="btn btn-primary" target="_blank"> <i class="bi bi-file-earmark-pdf"></i> CV'yi İndir </a>
+<a href="baran-balci-cv.pdf" class="btn btn-primary" target="_blank"> <i class="bi bi-file-earmark-pdf"></i> CV'yi İndir </a>
