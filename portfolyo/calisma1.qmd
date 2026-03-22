@@ -120,7 +120,15 @@ library(knitr)
 na_counts <- colSums(is.na(data))
 na_counts_sorted <- sort(na_counts, decreasing = TRUE)
 
-kable(head(na_counts_sorted, 8))
+na_df <- data.frame(
+  Degisken = names(na_counts_sorted),
+  NA_Sayisi = unname(na_counts_sorted)
+)
+
+kable(
+  head(na_df, 8),
+  caption = "Sütunlara Göre NA Sayıları (En Yüksek 8)"
+)
 ```
 
 •Veri setindeki tüm NA değerlerini aşağıdaki gibi değiştirin ve sonucu yeni bir nesne olarak kaydedin (orijinalin üzerine yazmayın):
