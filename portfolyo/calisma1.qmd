@@ -65,31 +65,115 @@ Genel olarak videoda analitik çalışmaların amacı, karmaşık görünen prob
 
     </details>
 
-2.  **Açık Uçlu Soru**\
+**Açık Uçlu Soru**\
 
-    Analitik projelerde başarının yalnızca gelişmiş algoritmalar veya karmaşık modeller kullanmakla ilgili olmadığı bilinmektedir. Buna göre başarılı bir analitik projenin temel özellikleri nelerdir? Kısaca açıklayınız.
+Analitik projelerde başarının yalnızca gelişmiş algoritmalar veya karmaşık modeller kullanmakla ilgili olmadığı bilinmektedir. Buna göre başarılı bir analitik projenin temel özellikleri nelerdir? Kısaca açıklayınız.
 
-    <details>
+<details>
 
-    <summary><b>Cevabı Gör</b></summary>
+<summary><b>Cevabı Gör</b></summary>
 
-    **Doğru cevap:**
+**Doğru cevap:**
 
-    Başarılı bir analitik projenin temelinde doğru problem tanımı ve uygulanabilirlik yer almaktadır. Projenin amacı en karmaşık veya en pahalı modeli geliştirmek değil, gerçek problemi çözen ve uygulanabilir bir çözüm üretmektir. Bu nedenle analitik projelerde müşteri ihtiyaçlarını doğru anlamak, problemi net bir şekilde tanımlamak ve pratik çözümler geliştirmek büyük önem taşır. Ayrıca proje sürecinde paydaşlarla etkin iletişim kurulması ve müşteri memnuniyetinin sağlanması da başarının önemli unsurlarındandır.
+Başarılı bir analitik projenin temelinde doğru problem tanımı ve uygulanabilirlik yer almaktadır. Projenin amacı en karmaşık veya en pahalı modeli geliştirmek değil, gerçek problemi çözen ve uygulanabilir bir çözüm üretmektir. Bu nedenle analitik projelerde müşteri ihtiyaçlarını doğru anlamak, problemi net bir şekilde tanımlamak ve pratik çözümler geliştirmek büyük önem taşır. Ayrıca proje sürecinde paydaşlarla etkin iletişim kurulması ve müşteri memnuniyetinin sağlanması da başarının önemli unsurlarındandır.
 
-    </details>
+</details>
 
-    ```{r}
-    library(dslabs)
+## (c)Veri Seti
 
-    data("polls_us_election_2016")
+• dslabs paketinden polls_us_election_2016 veri setinin içe aktarılması.
 
-    data <- polls_us_election_2016
+```{r}
+library(dslabs)
 
-    head(data)
-    ```
+data("polls_us_election_2016")
+
+data <- polls_us_election_2016
+
+head(data)
+```
+
+• İki değişken(Ad ve doğum yılı) ve bir k tamsayısı (integer) tanımlanması. Orijinal veri setinin k adet satırını görüntülemek.
 
 ```{r}
 my_first <- "Baran"
 my_birth_year <- 1997
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+if (k %% 2 == 0) {
+  head(data, k)
+} else {
+  tail(data, k)
+}
+```
+
+• Tüm veri setindeki toplam NA (eksik) değer sayısı.
+
+```{r}
+sum(is.na(data))
+```
+
+• En büyükten en küçüğe sıralanmış şekilde sütun başına NA değer sayısı (ilk 8 sütunu görüntülemek.)
+
+```{r}
+library(knitr)
+
+na_counts <- colSums(is.na(data))
+na_counts_sorted <- sort(na_counts, decreasing = TRUE)
+
+kable(head(na_counts_sorted, 8))
+```
+
+•Veri setindeki tüm NA değerlerini aşağıdaki gibi değiştirin ve sonucu yeni bir nesne olarak kaydedin (orijinalin üzerine yazmayın):
+
+– Sayısal (numeric) sütunlar için: NA değerlerini my_birth_year + k ile değiştirin.
+
+– Karakter (character) veya faktör (factor) sütunları için: NA değerlerini paste0(my_first, "\_", k) ile değiştirin.
+
+```{r}
+new_data <- data
+
+for (col in names(new_data)) {
+  
+  if (is.numeric(new_data[[col]])) {
+    
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+    
+  } else if (is.character(new_data[[col]])) {
+    
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+    
+  } else if (is.factor(new_data[[col]])) {
+    
+    new_data[[col]] <- as.character(new_data[[col]])
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+    
+  }
+}
+```
+
+• Yeni veri çerçevesi (data frame) için çıktıları yazdırın:
+
+1\. Yukarıdakiyle tamamen aynı kuralı kullanarak yeni veri çerçevesinin k satırını görüntüleyin:
+
+– Eğer k çift ise, yeni veri çerçevesinin ilk k satırını gösterin.
+
+– Eğer k tek ise, yeni veri çerçevesinin son k satırını gösterin.
+
+2\. Yeni veri çerçevesinde kalan toplam NA değer sayısını görüntüleyin.
+
+3\. Ayrıca anyNA(new_data) komutunu da yazdırın (Eğer doğru bir şekilde değiştirdiyseniz FALSE döndürmelidir).
+
+```{r}
+# 1. k’ya göre satır gösterme
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+
+# 2. Toplam NA sayısı
+sum(is.na(new_data))
+
+# 3. anyNA sonucu
+anyNA(new_data)
 ```
